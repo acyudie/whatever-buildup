@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hana_care_app</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- Netlify Forms detection (React SPA required) -->
+  <form name="consultation" data-netlify="true" netlify style="display:none">
+    <input type="text" name="name" />
+    <input type="tel" name="phone" />
+    <select name="category">
+      <option value="visit-care">visit-care</option>
+      <option value="visit-bath">visit-bath</option>
+      <option value="grade-apply">grade-apply</option>
+      <option value="fee">fee</option>
+      <option value="other">other</option>
+    </select>
+    <textarea name="message"></textarea>
+  </form>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
